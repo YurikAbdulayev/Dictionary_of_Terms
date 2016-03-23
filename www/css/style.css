@@ -228,6 +228,42 @@ header a:hover {
 	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
 }
+
+.our_people {
+	float: left; 
+	margin-left: 8%;
+	width: 15%;
+	background-color: red;
+	background-size: cover;
+}
+
+.about_dev {
+	width: 98%;
+}
+
+.about_dev img{
+	width: 100%;
+	height: 50%;
+	margin: auto;
+	padding-top: 1%;
+	padding-left: 1%;
+	border-radius: 10px;
+}
+
+.ful_names {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50%;
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	height: 10px;
+}
+
+.role {
+
+}
+
 /* Стили для футера */
 
 footer {
