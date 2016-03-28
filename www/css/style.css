@@ -1,4 +1,4 @@
-@charset "utf-8
+@charset "utf-8"
 * {
 	margin: 0;
 	padding: 0;
@@ -31,10 +31,10 @@ header {
 	
 }
 
-header a {
+button {
 	float:right;
 	margin-left: 10px;
-	padding: 10px;
+	padding: 0.5%;
 	color: #f7f7f7;
 	-webkit-border-radius:4px;
 	moz-border-radius:4px;
@@ -43,35 +43,24 @@ header a {
 	font-size: 26px;
 	background-color: rgba(255, 140, 0, .6);
 	text-decoration: none;
+	background-size: cover;
+	border:0;
 }
 
-header a:hover {
+button:hover {
 	/*text-transform: uppercase;*/
 	background-color: rgba(255, 140, 0, .25);
 	font-weight: bolt;
 }
 
-.link {
-	border: solid 1px #da7c0c;
-	background: #f78d1d;
-	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a, #f47a20);
-	color: #f7f7f7;
-	-webkit-border-radius:4px;
-	moz-border-radius:4px;
-	border-radius:4px;
-	cursor: pointer;
-}
-
 #mainsection {
 	width: 100%;
 	padding: 2% 0;
-	/*margin: 15px 0;*/
 	float: left;
-	min-height: 668px;
+	height: 100vh;
 	max-width: 100%;
 	box-sizing: border-box;
-  background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
+	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
 }
 
@@ -93,7 +82,7 @@ header a:hover {
 	box-sizing: border-box;
 }
 
-#mainsection a {
+#mainsection button {
 	position: absolute;
 	top: 50%;
 	left: 25%;
@@ -134,7 +123,7 @@ header a:hover {
 	min-height: 653px;
 	max-width: 100%;
 	box-sizing: border-box;
-	background:  #FFFF99;
+	background:  #FFFFCC;
 	background-size: cover;
 }
 
@@ -143,9 +132,9 @@ header a:hover {
 	width: 25%;
     float: left;
 	margin-left: 10%;
-    background-color: #FFFF33;
+    background-color: #9999FF;
     border-radius: 5px;
-    border: 5px solid #FFFF00;
+   /* border: 5px solid #FFFF00;*/
     box-sizing: border-box;
     padding: 1%;
 }
@@ -161,35 +150,35 @@ header a:hover {
 #search_line {
     width: 30%;
     margin-left: 47%;
-    background-color: #FFFF33;
+    background-color: #9999FF;
     border-radius: 5px;
-    border: 5px solid #FFFF00;
+  /*  border: 5px solid #FFFF00;*/
     box-sizing: border-box;
     padding: 1%;
 }
 
 #result_search {
 	font-family: Franklin Gothic Book, sans-serif;
-	font-size: 24px;
+	font-size: 24px;	
 	width: 30%;
     margin-left: 47%;
 	margin-top: 10px;
-    background-color: #FFFF33;
+    background-color: rgba(181, 205, 230, .6);
     border-radius: 5px;
-    border: 5px solid #FFFF00;
+    /*border: 5px solid #FFFF00;*/
     box-sizing: border-box;
     padding: 1%;
 	height: 502px;
 }
 
 .input {
-	font-size: 24px;
-	line-height: 1;
-	width: 100%;
-	padding: 3px;
-	margin: auto;
-	outline: none;
-	border: 1px solid #d9d9d9;
+    font-size: 24px;
+    line-height: 1;
+    width: 98%;
+    padding: 1%;
+    margin: auto;
+    outline: none;
+    border: 1px solid #d9d9d9;
 }
 
 .input:hover {
@@ -210,8 +199,7 @@ header a:hover {
 	padding: 2% 0;
 	/*margin: 15px 0;*/
 	float: left;
-	min-height: 653px;
-	max-width: 100%;
+	height: 100vh;
 	box-sizing: border-box;
 	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
@@ -222,46 +210,51 @@ header a:hover {
 	padding: 2% 0;
 	/*margin: 15px 0;*/
 	float: left;
-	min-height: 672px;
+	height: 100vh;
 	max-width: 100%;
 	box-sizing: border-box;
 	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
+	
 }
 
 .our_people {
 	float: left; 
 	margin-left: 8%;
 	width: 15%;
-	background-color: red;
+	background-color: rgba(243, 243, 243, 0.5);
 	background-size: cover;
+	border-radius: 5px;
 }
 
-.about_dev {
+
+.our_people img{
 	width: 98%;
-}
-
-.about_dev img{
-	width: 100%;
-	height: 50%;
-	margin: auto;
-	padding-top: 1%;
 	padding-left: 1%;
 	border-radius: 10px;
+}
+.avatar_dev {
+
 }
 
 .ful_names {
 	width: 80%;
 	margin-left: 10%;
-	margin-top: 50%;
 	text-align: center;
-	background-color: white;
 	border-radius: 5px;
-	height: 10px;
+	float: left;
+	background-color: rgba(135, 149, 243, 0.52);
+	background-size: cover;
 }
 
 .role {
-
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	background-color: rgba(99, 186, 234, 0.43);
+	border-radius: 5px;
+	background-size: cover;
+	margin-bottom: 1%
 }
 
 /* Стили для футера */
