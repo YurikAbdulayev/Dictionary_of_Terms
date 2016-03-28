@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 * {
 	margin: 0;
 	padding: 0;
@@ -26,9 +26,7 @@ header {
 	padding: 1%;
 	position: fixed;
 	z-index: 228;
-	background-color: rgba(214, 214, 214, .4); ;
-	/*text-align: center;*/
-	
+	background-color: rgba(214, 214, 214, .4);
 }
 
 button {
