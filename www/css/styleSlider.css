@@ -36,16 +36,14 @@ img {
 a.up, a.down {
     display: block;
     width:32px;
-    height:32px;
+    height: 32px;
     margin: 0 auto;
     outline: none;
 }
 a.up {
-    padding-bottom: 2px;
     background:url(img/u-button.png);
 }
 a.down {
-    padding-top: 2px;
     background:url(img/d-button.png);
 }
 .VjCarouselLite {
@@ -65,7 +63,7 @@ a.down {
     margin-bottom: 5px;
     padding: auto;
     width:70%;
-    height: 150px;
+    height: 22vh;
     border-radius: 10px;
     background-color: #F8F8F8;
 }

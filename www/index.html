@@ -30,7 +30,14 @@
 			str = jQuery(this).val();
 			jQuery.scrollTo(str, 1000);
 		});
-	});			
+	});
+
+	$(document).ready(function () {
+		$("input").click(function () {
+			$("#result_search").animate({height: "show"}, 1000);
+		});
+	});
+
 	</script>
 </head>
 <body>
@@ -50,7 +57,7 @@
 	  <div id="firstsection">
 		<div id="menu" class="Vwidget">
 			<a href="#" class="up" ></a>
-  <div class="VjCarouselLite" style="height: 410px;" >
+  <div class="VjCarouselLite" >
 	   <ul>
 		 <li>
 		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
@@ -87,7 +94,7 @@
  <a href="#" class="down" /></a>
 		</div>
 		<div id="search_line">
-			<input class="input" id="username" name="username"size="20" type="text" placeholder="яке слово шукаємо?">
+			<input class="input" id="username" name="username" size="20" type="text" placeholder="яке слово шукаємо?">
 		</div>
 		<div id="result_search">
 			<p><b>Результати пошуку:</b></p>
