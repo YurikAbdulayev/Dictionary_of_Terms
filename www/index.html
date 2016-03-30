@@ -8,7 +8,7 @@
 	<link href="" rel="shortcut icon" type="image/x-icon"/>
 	<title></title>
 	<link href="css/styleSlider.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="scripts/jquery-1-8-3.jss"></script>	
+
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/jcarousellite_1.0.1.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
@@ -27,16 +27,16 @@
 	
 	$(document).ready(function() {
 		$("button").click(function() {
-			str = jQuery(this).val();
-			jQuery.scrollTo(str, 1000);
+			str = $(this).val();
+			$.scrollTo(str, 1000);
 		});
 	});
 
-	$(document).ready(function () {
-		$("input").click(function () {
-			$("#result_search").animate({height: "show"}, 1000);
-		});
-	});
+//	$(document).ready(function () {
+//		$("input").click(function () {
+//			$("#result_search").animate({height: "show"}, 1000);
+//		});
+//	});
 
 	</script>
 </head>
@@ -49,16 +49,17 @@
 		<button value="#mainsection">головна</button>
 	</header>
       <div id="mainsection">
+		  	<span class="auth" value="" id="sign_in">Sign in</span>
 			<button  value="#search" class="button" style="text-decoration: none;">перейти до пошуку</button>
       </div>
 	  <div class="title" id="search">
-		<div class="titles">Пошук</div>
+		  <div class="titles">Пошук</div>
 	  </div>
 	  <div id="firstsection">
-		<div id="menu" class="Vwidget">
-			<a href="#" class="up" ></a>
-  <div class="VjCarouselLite" >
-	   <ul>
+		  <div id="menu" class="Vwidget">
+            <a href="#" class="up" ></a>
+            <div class="VjCarouselLite" >
+      <ul>
 		 <li>
 		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
 			<a class="linktosearch">Напрям</a>
@@ -73,7 +74,7 @@
 		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
 			<a class="linktosearch">Напрям</a>
 		  </div>
-		 </li>	 
+		 </li>
 		 <li>
 		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
 			<a class="linktosearch">Напрям</a>
@@ -91,8 +92,8 @@
 		 </li>
 	   </ul>
   </div>
- <a href="#" class="down" /></a>
-		</div>
+            <a href="#" class="down" /></a>
+        </div>
 		<div id="search_line">
 			<input class="input" id="username" name="username" size="20" type="text" placeholder="яке слово шукаємо?">
 		</div>
@@ -128,29 +129,36 @@
 					<div class="about_dev">
 					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
 						<div class="ful_names">
+							dsafmjk
 						</div>
 						<div class="role">
+							dsmajkn
 						</div>
 					</div>
 				</div>
-				<div class="our_people">
+				<div class="our_people_above">
 					<div class="about_dev">
 					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
 						<div class="ful_names">
+							jsakdnkjs
 						</div>
 						<div class="role">
+							fnejkwng
 						</div>
 					</div>
 				</div>
-				<div class="our_people">
+				<div class="our_people_above">
 					<div class="about_dev">
 					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
 						<div class="ful_names">
+							gregwer
 						</div>
 						<div class="role">
+							jnskdjnak
 						</div>
 					</div>
 				</div>
+				</div>>
 			</div>
   </div>
   <footer>
