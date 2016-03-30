@@ -18,7 +18,6 @@ body {
 header, footer {
 	width: 98%;
 	background-color: #a3a3a3;
-	height: 10vh;
 	float: left;
 }	
 
@@ -31,16 +30,15 @@ header {
 }
 
 button {
-	margin-top: 1%;
 	float:right;
 	margin-left: 10px;
 	padding: 0.5%;
 	color: #f7f7f7;
-	-webkit-border-radius:4px;
-	moz-border-radius:4px;
-	border-radius:4px;
+	/*-webkit-border-radius:4px;*/
+	/*moz-border-radius:4px;*/
+	/*border-radius:4px;*/
 	cursor: pointer;
-	font-size: 26px;
+	font-size: 30px;
 	background-color: rgba(255, 140, 0, .6);
 	text-decoration: none;
 	background-size: cover;
@@ -62,6 +60,21 @@ button:hover {
 	box-sizing: border-box;
 	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
+}
+
+.auth {
+	font-size: 20px;
+	color: #f7f7f7;
+	padding: 1vh;
+	position: absolute;
+	top: 60px;
+	right: 3vh;
+	border: 2px solid rgba(153, 153, 255, .7);
+	cursor: pointer;
+}
+
+.auth:hover {
+	background-color: rgba(153, 153, 255, .5);
 }
 
 .button{
@@ -97,7 +110,6 @@ button:hover {
 
 .title {
 	width: 100%;
-	height: 10vh;
 	padding: 2% 0;
 	float: left;
 	max-width: 100%;
@@ -120,7 +132,6 @@ button:hover {
 	/*margin: 15px 0;*/
 	float: left;
 	height: 90vh;
-	max-width: 100%;
 	box-sizing: border-box;
 	background:  #FFFFCC;
 	background-size: cover;
@@ -169,7 +180,7 @@ button:hover {
     box-sizing: border-box;
     padding: 1%;
 	height: 90%;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .input {
@@ -200,7 +211,7 @@ button:hover {
 	padding: 2% 0;
 	/*margin: 15px 0;*/
 	float: left;
-	height: 90vh;
+	height: 100vh;
 	box-sizing: border-box;
 	background: url(book-pages-grass-sunshine-1680x1050.jpg) center no-repeat;
 	background-size: cover;
@@ -220,7 +231,7 @@ button:hover {
 }
 
 .our_people {
-	float: left; 
+	float: left;
 	margin-left: 8%;
 	width: 15%;
 	background-color: rgba(243, 243, 243, 0.5);
@@ -228,14 +239,24 @@ button:hover {
 	border-radius: 5px;
 }
 
-
 .our_people img{
 	width: 98%;
 	padding-left: 1%;
 	border-radius: 10px;
 }
-.avatar_dev {
 
+.our_people_above {
+	margin-left: 8%;
+	width: 15%;
+	background-color: rgba(243, 243, 243, 0.5);
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.our_people_above img{
+	width: 98%;
+	padding-left: 1%;
+	border-radius: 10px;
 }
 
 .ful_names {
