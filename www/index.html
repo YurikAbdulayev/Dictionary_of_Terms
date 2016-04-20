@@ -1,167 +1,153 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/html">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-	<meta name="keywords" content=""/>
-	<meta name="description" content="">
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="" rel="shortcut icon" type="image/x-icon"/>
-	<title></title>
-	<link href="css/styleSlider.css" rel="stylesheet" type="text/css" />
-
-	<script type="text/javascript" src="scripts/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/jcarousellite_1.0.1.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
-	<script type='text/javascript' >
-		$(function() {
-		$(".Vwidget  .VjCarouselLite").jCarouselLite({
-			btnNext: ".Vwidget .down",
-			btnPrev: ".Vwidget .up",
-			vertical: true,
-			visible: 3,
-			auto: 5000,
-			speed: 500,
-			circular: true
-		});
-		});
-	
-	$(document).ready(function() {
-		$("button").click(function() {
-			str = $(this).val();
-			$.scrollTo(str, 1000);
-		});
-	});
-
-//	$(document).ready(function () {
-//		$("input").click(function () {
-//			$("#result_search").animate({height: "show"}, 1000);
-//		});
-//	});
-
-	</script>
-</head>
-<body>
-  <div id="page-wrap">
-  	<header>
-		<button value="#about_us">про нас</button>
-		<button >форум</button>
-		<button value="#contacts">контакти</button>
-		<button value="#mainsection">головна</button>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Слайдер на всю ширину экрана</title>
+		<meta name="description" content="Blueprint: " />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	</head>
+<div id="page-wrap">
+	<header>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("button").click(function() {
+					str = $(this).val();
+					$.scrollTo(str, 1000);
+				});
+			});
+		</script>
+		<!--<button style="float: right" value="#about_us">про нас</button>-->
+		<!--<button style="float: right" >форум</button>-->
+		<!--<button style="float: right" value="#contacts">контакти</button>-->
+		<!--<button style="float: right" value="#mainsection">головна</button>-->
+		<a class="headerButton" style="float: right" href="#about_us">про нас</a>
+		<a class="headerButton" style="float: right" >форум</a>
+		<a class="headerButton" style="float: right" href="#contacts">контакти</a>
+		<a class="headerButton" style="float: right" href="#mainsection">головна</a>
 	</header>
-      <div id="mainsection">
-		  	<span class="auth" value="" id="sign_in">Sign in</span>
-			<button  value="#search" class="button" style="text-decoration: none;">перейти до пошуку</button>
-      </div>
-	  <div class="title" id="search">
-		  <div class="titles">Пошук</div>
-	  </div>
-	  <div id="firstsection">
-		  <div id="menu" class="Vwidget">
-            <a href="#" class="up" ></a>
-            <div class="VjCarouselLite" >
-      <ul>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-		 <li>
-		  <div style="background: url(css/book-pages-grass-sunshine-1680x1050.jpg); background-size: cover;">
-			<a class="linktosearch">Напрям</a>
-		  </div>
-		 </li>
-	   </ul>
-  </div>
-            <a href="#" class="down" /></a>
-        </div>
-		<div id="search_line">
-			<input class="input" id="username" name="username" size="20" type="text" placeholder="яке слово шукаємо?">
+	<div id="mainsection">
+		<!--<span class="auth" value="" id="sign_in">Sign in</span>-->
+		<button id="search_button" value="#search" style="text-decoration: none;">перейти до пошуку</button>
+	</div>
+	<div class="title" id="search">
+		<div class="titles">Пошук</div>
+	</div>
+	<div class="container">
+		<div id="cbp-fwslider" class="cbp-fwslider">
+			<ul>
+				<li>
+					<a>
+						<div class="titleSlide">
+							<h3>Тёлка</h3><br>
+							<p>Тёлка - это хорошо и <br>даже очень</p><br><br>
+							<button>Перейти к тёлке</button>
+						</div>
+						<img src="images/1.jpg" alt="img01"/>
+					</a>
+				</li>
+				<li>
+					<a>
+						<div class="titleSlide">
+							<h3>Лёва</h3><br>
+							<p>Лёва - очень добрый <br> и почти не кусаеться</p><br><br>
+							<button>Перейти к лёве</button>
+						</div>
+						<img src="images/2.jpg" alt="img02"/>
+					</a>
+				</li>
+				<li><a><div class="titleSlide"></div><img src="images/3.jpg" alt="img03"/></a></li>
+				<li><a><div class="titleSlide"></div><img src="images/4.jpg" alt="img04"/></a></li>
+				<li><a><div class="titleSlide"></div><img src="images/5.jpg" alt="img05"/></a></li>
+
+			</ul>
 		</div>
-		<div id="result_search">
-			<p><b>Результати пошуку:</b></p>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.cbpFWSlider.min.js"></script>
+	<script>
+		$( function() {
+			$( '#cbp-fwslider' ).cbpFWSlider();
+		} );
+	</script>
+	<div class="title" id="contacts">
+		<div class="titles">Зворотній зв’язок</div>
+	</div>
+	<div id="secondsection" style="background: url('images/bgFeedBack.jpg')">
+		<div style=" background-color: rgba(103, 47, 169, 0.31); padding: 10px">
+			<div id="feedBackText">Є питання, чи пропозиції? Напишіть нам!</div>
+			<form action=""id="feedBack">
+				<input type="text" class="feedBack" name="username" id="username" placeholder="логін">
+				<input type="email" class="feedBack" name="email" id="email" placeholder="електронна адресса">
+				<input type="text" class="feedBack" name="name" id="name" placeholder="ім’я">
+				<textarea id="message" class="feedBack" name="message" placeholder="повідомлення"></textarea>
+				<button id="send">Надіслати</button>
+			</form>
 		</div>
-      </div>
-	  <div class="title" id="contacts">
-		<div class="titles">Контакти</div>
-	  </div>
-	  <div id="secondsection">
-	  
-      </div>
-	  <div class="title" id="about_us">
+	</div>
+	<div class="title" id="about_us">
 		<div class="titles">Про нас</div>
-		</div>
-			<div id="thirdsection">
-				<div class="our_people">
-					<div class="about_dev">
-						
-							<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
-						
-						<div class="ful_names">
-							fsbdj hfansjhd
-						</div>
-						<div class="role">
-						erbjvh ba jhase fbdjcsah hjac dsjha sdh 
-						frejnjhfnsjh
-						</div>
-					</div>
+	</div>
+	<div id="thirdsection">
+		<div class="our_people">
+			<div class="avatar" style="background: url('img/profile.jpg') center; background-size: cover;"></div>
+			<div class="about">
+				<div class="ful_names">
+					Юрік Абдулаєв
 				</div>
-				<div class="our_people">
-					<div class="about_dev">
-					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
-						<div class="ful_names">
-							dsafmjk
-						</div>
-						<div class="role">
-							dsmajkn
-						</div>
-					</div>
+				<hr>
+				<div class="role">
+					Back-end developer
 				</div>
-				<div class="our_people_above">
-					<div class="about_dev">
-					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
-						<div class="ful_names">
-							jsakdnkjs
-						</div>
-						<div class="role">
-							fnejkwng
-						</div>
-					</div>
-				</div>
-				<div class="our_people_above">
-					<div class="about_dev">
-					<img src="css/book-pages-grass-sunshine-1680x1050.jpg" />
-						<div class="ful_names">
-							gregwer
-						</div>
-						<div class="role">
-							jnskdjnak
-						</div>
-					</div>
-				</div>
-				</div>>
 			</div>
-  </div>
-  <footer>
-  </footer>
-</body>
+		</div>
+		<div class="our_people">
+			<div class="avatar" style="background: url('img/profile.jpg') center; background-size: cover;"></div>
+			<div class="about">
+				<div class="ful_names">
+					Вадя Заверталюк
+				</div>
+				<hr>
+				<div class="role">
+					Back-end developer
+				</div>
+			</div>
+		</div>
+		<div class="our_people">
+			<div class="avatar" style="background: url('img/profile.jpg') center; background-size: cover;"></div>
+			<div class="about">
+				<div class="ful_names">
+					Саньок Комісаренко
+				</div>
+				<hr>
+				<div class="role">
+					Back-end developer
+				</div>
+			</div>
+		</div>
+		<div class="our_people">
+			<div class="avatar" style="background: url('img/profile.jpg') center; background-size: cover;"></div>
+			<div class="about">
+				<div class="ful_names">
+					Костька Клугман
+				</div>
+				<hr>
+				<div class="role">
+					Design, Front-end developer
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	</body>
 </html>
